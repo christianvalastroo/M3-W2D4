@@ -5,10 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dream Travel Agency</title>
 
-  <!-- Bootstrap -->
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- CSS tuo -->
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -18,7 +17,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navbar-blur">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
-        <img src="https://picsum.photos/80?random=9" alt="logo" class="logo-navbar rounded-circle">
+        <img src="assets/612t3vEJ79L._AC_UF1000,1000_QL80_.jpg" logo" class="logo-navbar rounded-circle">
         <span class="fw-semibold">Dream Travel</span>
       </a>
 
@@ -68,7 +67,7 @@
 
         <div class="col-lg-6">
           <div class="hero-card shadow-lg rounded-4 overflow-hidden">
-            <img src="https://picsum.photos/1200/800?random=21" class="w-100" alt="hero">
+            <img src="assets/download-12.jpg" class="w-100" alt="hero">
           </div>
         </div>
       </div>
@@ -84,19 +83,19 @@
       </div>
 
       <!-- Bottone "collassa" -->
-      <button class="btn btn-outline-secondary btn-sm" type="button"
+      <button id="btnWeeklyToggle" class="btn btn-outline-secondary btn-sm" type="button"
               data-bs-toggle="collapse" data-bs-target="#weeklyCollapse">
-        Mostra/Nascondi
+        Nascondi
       </button>
     </div>
 
+    <!-- Collapse (ID già usato dal bottone) -->
     <div id="weeklyCollapse" class="collapse show">
       <div class="row g-4">
 
-        <!-- Card template: col-6 (mobile 2), col-md-4 (tablet 3), col-lg-3 (desktop 4) -->
         <div class="col-6 col-md-4 col-lg-3">
           <div class="card card-trip h-100 shadow-sm">
-            <img src="https://picsum.photos/600/400?random=1" class="card-img-top" alt="meta">
+            <img src="assets/download-2.jpg" class="card-img-top" alt="meta">
             <div class="card-body">
               <div class="d-flex justify-content-between align-items-start">
                 <h5 class="card-title mb-1">Parigi</h5>
@@ -115,7 +114,7 @@
 
         <div class="col-6 col-md-4 col-lg-3">
           <div class="card card-trip h-100 shadow-sm">
-            <img src="https://picsum.photos/600/400?random=2" class="card-img-top" alt="meta">
+            <img src="assets/download-3.jpg" class="card-img-top" alt="meta">
             <div class="card-body">
               <div class="d-flex justify-content-between align-items-start">
                 <h5 class="card-title mb-1">Lisbona</h5>
@@ -134,7 +133,7 @@
 
         <div class="col-6 col-md-4 col-lg-3">
           <div class="card card-trip h-100 shadow-sm">
-            <img src="https://picsum.photos/600/400?random=3" class="card-img-top" alt="meta">
+            <img src="assets/download-4.jpg" class="card-img-top" alt="meta">
             <div class="card-body">
               <div class="d-flex justify-content-between align-items-start">
                 <h5 class="card-title mb-1">Praga</h5>
@@ -153,7 +152,7 @@
 
         <div class="col-6 col-md-4 col-lg-3">
           <div class="card card-trip h-100 shadow-sm">
-            <img src="https://picsum.photos/600/400?random=4" class="card-img-top" alt="meta">
+            <img src="assets/download-5.jpg" class="card-img-top" alt="meta">
             <div class="card-body">
               <div class="d-flex justify-content-between align-items-start">
                 <h5 class="card-title mb-1">Atene</h5>
@@ -180,17 +179,16 @@
       <div class="d-flex align-items-end justify-content-between flex-wrap gap-2 mb-4">
         <div>
           <h2 class="mb-1">Welcome Summer</h2>
-          <p class="text-secondary mb-0">6 card con shadow “più marcata” e badge.</p>
+          <p class="text-secondary mb-0">6 card con shadow più marcata e badge.</p>
         </div>
         <span class="text-secondary small">🌞 Estate in arrivo</span>
       </div>
 
       <div class="row g-4">
-        <!-- 6 cards: col-12 col-md-6 col-lg-4 -->
         <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100 shadow-lg card-summer">
+          <div class="card h-100 shadow-lg card-summer position-relative">
             <div class="badge badge-float text-bg-warning">HOT</div>
-            <img src="https://picsum.photos/900/650?random=31" class="card-img-top" alt="estate">
+            <img src="assets/download-6.jpg" class="card-img-top" alt="estate">
             <div class="card-body">
               <h5 class="card-title">Santorini</h5>
               <p class="card-text text-secondary">Blu e bianco, tramonti spettacolari.</p>
@@ -200,9 +198,9 @@
         </div>
 
         <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100 shadow-lg card-summer">
+          <div class="card h-100 shadow-lg card-summer position-relative">
             <div class="badge badge-float text-bg-info">NEW</div>
-            <img src="https://picsum.photos/900/650?random=32" class="card-img-top" alt="estate">
+            <img src="assets/download-1.jpg" class="card-img-top" alt="estate">
             <div class="card-body">
               <h5 class="card-title">Malta</h5>
               <p class="card-text text-secondary">Mare cristallino e nightlife.</p>
@@ -212,9 +210,9 @@
         </div>
 
         <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100 shadow-lg card-summer">
+          <div class="card h-100 shadow-lg card-summer position-relative">
             <div class="badge badge-float text-bg-success">TOP</div>
-            <img src="https://picsum.photos/900/650?random=33" class="card-img-top" alt="estate">
+            <img src="assets/download-7.jpg" class="card-img-top" alt="estate">
             <div class="card-body">
               <h5 class="card-title">Ibiza</h5>
               <p class="card-text text-secondary">Spiagge, feste e relax.</p>
@@ -224,9 +222,9 @@
         </div>
 
         <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100 shadow-lg card-summer">
+          <div class="card h-100 shadow-lg card-summer position-relative">
             <div class="badge badge-float text-bg-danger">-25%</div>
-            <img src="https://picsum.photos/900/650?random=34" class="card-img-top" alt="estate">
+            <img src="assets/download-8.jpg" class="card-img-top" alt="estate">
             <div class="card-body">
               <h5 class="card-title">Mykonos</h5>
               <p class="card-text text-secondary">Beach club e villaggi iconici.</p>
@@ -236,9 +234,9 @@
         </div>
 
         <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100 shadow-lg card-summer">
+          <div class="card h-100 shadow-lg card-summer position-relative">
             <div class="badge badge-float text-bg-secondary">POP</div>
-            <img src="https://picsum.photos/900/650?random=35" class="card-img-top" alt="estate">
+            <img src="assets/download-9.jpg" class="card-img-top" alt="estate">
             <div class="card-body">
               <h5 class="card-title">Barcellona</h5>
               <p class="card-text text-secondary">Arte, tapas e mare cittadino.</p>
@@ -248,9 +246,9 @@
         </div>
 
         <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100 shadow-lg card-summer">
+          <div class="card h-100 shadow-lg card-summer position-relative">
             <div class="badge badge-float text-bg-primary">BEST</div>
-            <img src="https://picsum.photos/900/650?random=36" class="card-img-top" alt="estate">
+            <img src="assets/download-10.jpg" class="card-img-top" alt="estate">
             <div class="card-body">
               <h5 class="card-title">Dubrovnik</h5>
               <p class="card-text text-secondary">Città medievale sul mare.</p>
@@ -263,7 +261,7 @@
     </div>
   </section>
 
-  <!-- OFFERTA DEL GIORNO (66% / 33%) -->
+  <!-- OFFERTA DEL GIORNO -->
   <section class="container my-5">
     <div class="d-flex align-items-end justify-content-between flex-wrap gap-2 mb-4">
       <div>
@@ -278,7 +276,7 @@
         <div class="card h-100 shadow-sm overflow-hidden">
           <div class="row g-0 h-100">
             <div class="col-md-5">
-              <img src="https://picsum.photos/1000/800?random=44" class="img-fluid h-100 object-fit-cover" alt="offerta">
+              <img src="assets/download-11.jpg" class="img-fluid h-100 object-fit-cover" alt="offerta">
             </div>
             <div class="col-md-7">
               <div class="card-body p-4">
@@ -289,7 +287,8 @@
                 </p>
                 <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
                   <span class="display-6 fw-bold mb-0">899€</span>
-                  <a href="#" class="btn btn-primary btn-lg">Prenota ora</a>
+                  <!-- Classe aggiunta per JS -->
+                  <button class="btn btn-primary btn-lg js-prenota" type="button">Prenota ora</button>
                 </div>
               </div>
             </div>
@@ -307,11 +306,14 @@
               <li class="d-flex gap-2 mb-2"><span class="dot"></span><span>Tour guidato 1 giorno</span></li>
               <li class="d-flex gap-2"><span class="dot"></span><span>Assistenza h24</span></li>
             </ul>
+
             <hr class="my-4">
+
             <p class="text-secondary mb-2">Codice promo</p>
             <div class="d-flex gap-2">
-              <input class="form-control" value="DREAM25" readonly>
-              <button class="btn btn-outline-secondary" type="button">Copia</button>
+              <!-- ID aggiunti per JS -->
+              <input id="promoCode" class="form-control" value="DREAM25" readonly>
+              <button id="copyPromo" class="btn btn-outline-secondary" type="button">Copia</button>
             </div>
           </div>
         </div>
@@ -331,46 +333,27 @@
       </div>
 
       <div class="row g-3">
-        <!-- immagini: 6/8 come vuoi -->
         <div class="col-6 col-md-4 col-lg-3">
           <div class="img-tile ratio ratio-4x3 rounded-4 overflow-hidden shadow-sm">
-            <img src="https://picsum.photos/900/700?random=60" alt="lm" class="w-100 h-100 object-fit-cover">
+            <img src="assets/download-1.jpg" alt="lm" class="w-100 h-100 object-fit-cover">
           </div>
         </div>
         <div class="col-6 col-md-4 col-lg-3">
           <div class="img-tile ratio ratio-4x3 rounded-4 overflow-hidden shadow-sm">
-            <img src="https://picsum.photos/900/700?random=61" alt="lm" class="w-100 h-100 object-fit-cover">
+            <img src="assets/download-2.jpg" alt="lm" class="w-100 h-100 object-fit-cover">
           </div>
         </div>
         <div class="col-6 col-md-4 col-lg-3">
           <div class="img-tile ratio ratio-4x3 rounded-4 overflow-hidden shadow-sm">
-            <img src="https://picsum.photos/900/700?random=62" alt="lm" class="w-100 h-100 object-fit-cover">
+            <img src="assets/download-3.jpg" alt="lm" class="w-100 h-100 object-fit-cover">
           </div>
         </div>
         <div class="col-6 col-md-4 col-lg-3">
           <div class="img-tile ratio ratio-4x3 rounded-4 overflow-hidden shadow-sm">
-            <img src="https://picsum.photos/900/700?random=63" alt="lm" class="w-100 h-100 object-fit-cover">
+            <img src="assets/download-4.jpg" alt="lm" class="w-100 h-100 object-fit-cover">
           </div>
         </div>
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="img-tile ratio ratio-4x3 rounded-4 overflow-hidden shadow-sm">
-            <img src="https://picsum.photos/900/700?random=64" alt="lm" class="w-100 h-100 object-fit-cover">
-          </div>
         </div>
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="img-tile ratio ratio-4x3 rounded-4 overflow-hidden shadow-sm">
-            <img src="https://picsum.photos/900/700?random=65" alt="lm" class="w-100 h-100 object-fit-cover">
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="img-tile ratio ratio-4x3 rounded-4 overflow-hidden shadow-sm">
-            <img src="https://picsum.photos/900/700?random=66" alt="lm" class="w-100 h-100 object-fit-cover">
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="img-tile ratio ratio-4x3 rounded-4 overflow-hidden shadow-sm">
-            <img src="https://picsum.photos/900/700?random=67" alt="lm" class="w-100 h-100 object-fit-cover">
-          </div>
         </div>
       </div>
     </div>
@@ -431,7 +414,7 @@
     </div>
   </section>
 
-  <!-- CONTATTI -->
+  <!-- CONTATTI + FOOTER -->
   <section id="contatti" class="bg-dark text-white py-5">
     <div class="container">
       <div class="row g-4 align-items-center">
@@ -462,19 +445,19 @@
       <hr class="border-secondary my-4">
 
       <div class="d-flex justify-content-between flex-wrap gap-2 text-white-50 small">
-        <span>© 2026 Dream Travel Agency</span>
+        <span>© <span id="year"></span> Dream Travel Agency</span>
         <span>Privacy • Cookie • Termini</span>
       </div>
     </div>
   </section>
 
-  <!-- MODAL (usata per i dettagli delle offerte) -->
+  <!-- MODAL -->
   <div class="modal fade" id="modalOfferta" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content rounded-4">
         <div class="modal-header">
           <h5 class="modal-title">Dettagli Offerta</h5>
-          <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+          <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <p class="mb-2"><strong>Incluso:</strong> volo + hotel + assistenza.</p>
@@ -482,14 +465,28 @@
         </div>
         <div class="modal-footer">
           <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Chiudi</button>
-          <button class="btn btn-primary">Prenota</button>
+          <button class="btn btn-primary js-prenota" type="button">Prenota</button>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST (per notifiche JS) -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="appToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <strong class="me-auto">Dream Travel</strong>
+        <small>Ora</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body" id="toastMsg">
+        Operazione completata.
       </div>
     </div>
   </div>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script>
+  <script src="script.jsù"></script>
 </body>
 </html>

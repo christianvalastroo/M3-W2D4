@@ -1,6 +1,21 @@
+:root {
+  --color-primary: #0d6efd;
+  --color-primary-dark: #0b1f44;
+  --color-light-bg: #f7f8fb;
+  --color-white: #ffffff;
+
+  --radius-sm: 1rem;
+  --radius-md: 1.25rem;
+
+  --shadow-hover: 0 8px 20px rgba(0,0,0,0.08);
+
+  --img-card-height: 160px;
+  --img-summer-height: 210px;
+}
+
 /* Base */
 body {
-  background: #fff;
+  background: var(--color-white);
 }
 
 .logo-navbar {
@@ -16,8 +31,16 @@ body {
 
 /* Hero */
 .hero {
-  background: radial-gradient(1200px circle at 20% 20%, rgba(255,255,255,.15), transparent 40%),
-              linear-gradient(135deg, #0d6efd, #0b1f44);
+  background: radial-gradient(
+                1200px circle at 20% 20%, 
+                rgba(255,255,255,.15), 
+                transparent 40%
+              ),
+              linear-gradient(
+                135deg, 
+                var(--color-primary), 
+                var(--color-primary-dark)
+              );
 }
 
 .hero-card img {
@@ -25,7 +48,7 @@ body {
 }
 
 .section-soft {
-  background: #f7f8fb;
+  background: var(--color-light-bg);
 }
 
 /* Badge hero */
@@ -35,29 +58,31 @@ body {
 
 /* Card viaggio */
 .card-trip .card-img-top {
-  height: 160px;
+  height: var(--img-card-height);
   object-fit: cover;
 }
 
 .card-trip {
   border: 0;
-  border-radius: 1rem;
+  border-radius: var(--radius-sm);
   overflow: hidden;
+  transition: 0.2s ease;
 }
 
 .card-trip:hover {
   transform: translateY(-2px);
-  transition: 0.2s ease;
+  box-shadow: var(--shadow-hover);
 }
 
+/* Card Summer */
 .card-summer {
   border: 0;
-  border-radius: 1.25rem;
+  border-radius: var(--radius-md);
   overflow: hidden;
 }
 
 .card-summer .card-img-top {
-  height: 210px;
+  height: var(--img-summer-height);
   object-fit: cover;
 }
 
@@ -76,7 +101,7 @@ body {
   width: 10px;
   height: 10px;
   border-radius: 999px;
-  background: #0d6efd;
+  background: var(--color-primary);
   margin-top: 7px;
   flex: 0 0 auto;
 }
@@ -85,6 +110,7 @@ body {
 .img-tile img {
   transition: transform .25s ease;
 }
+
 .img-tile:hover img {
   transform: scale(1.06);
 }
